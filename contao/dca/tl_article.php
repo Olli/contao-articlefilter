@@ -15,7 +15,7 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['singleSRC'] = [
     'exclude'             => true,
     'inputType'           => 'fileTree',
     'eval'                => ['fieldType'=>'radio', 'files'=>true, 'filesOnly'=>true, 'mandatory'=>true],
-    'sql'			      => "binary(16) NULL"
+    'sql'		  => "binary(16) NULL"
     ];
 
 $GLOBALS['TL_DCA']['tl_article']['fields']['articlefilter_enable'] = [
@@ -35,7 +35,7 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['articlefilter_criteria'] = [
 
 $GLOBALS['TL_DCA']['tl_article']['palettes']['__selector__'][]          = 'addImage';
 $GLOBALS['TL_DCA']['tl_article']['palettes']['__selector__'][]          = 'articlefilter_enable';
-$GLOBALS['TL_DCA']['tl_article']['subpalettes']['addImage']             = 'singleSRC';
+$GLOBALS['TL_DCA']['tl_article']['subpalettes']['addImage']             = 'singleSRC,alt,title,size,imagemargin,imageUrl,fullsize,caption,floating';
 $GLOBALS['TL_DCA']['tl_article']['subpalettes']['articlefilter_enable'] = 'articlefilter_criteria';
 
 $GLOBALS['TL_DCA']['tl_article']['palettes']['default']                 = str_replace(
